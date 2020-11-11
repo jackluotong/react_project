@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+ import Show from './GetGreeting'
+// const element = (
+//   <div>
+//     <h1>Hello!</h1>
+//     <h2>Good to see you here.</h2>
+//   </div>
+// );
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+   <React.StrictMode>
+     <App />
+    <Show />
+   </React.StrictMode>,
   document.getElementById('root')
 );
 
@@ -15,3 +22,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+reportWebVitals(console.log);
