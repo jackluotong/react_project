@@ -1,16 +1,18 @@
+import { Button } from 'antd';
+
 function GetGreeting(props) { 
     return <h1>Hello, {props.name}.</h1>; 
 
 }
 function DateTime(props){
-  return <h2>It is {props.Date}.</h2>;
+  return <Button type="primary">Primary</Button>;
  }
  function Click(){
-   return <button 
+   return <Button 
    className='but1'
    onClick={activateLasers}>
    Activate Lasers
- </button>
+ </Button>
  }
  function activateLasers(){
   const numbers = [1, 2, 3, 4, 5];
@@ -28,14 +30,7 @@ function Show(){
     <textarea>
     你好， 这是在 text area 里的文本
     </textarea>
-    {/* <select>
-  <option value="grapefruit">葡萄柚</option>
-  <option value="lime">酸橙</option>
-  <option selected value="coconut">椰子</option>
-  <option value="mango">芒果</option>
-</select> */}
-    </div>
+     </div>
   )
 }
 export default Show;
-
