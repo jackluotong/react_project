@@ -3,20 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Show from './GetGreeting'
-import Antd from 'ant-design'
-React.use(Antd)
-// const element = (
-//   <div>
-//     <h1>Hello!</h1>
-//     <h2>Good to see you here.</h2>
-//   </div>
-// );
+import Show from './Page/TestOne/TestOne'
+import TestTwo from './Page/TestOne/TestTwo'
+/* 
+ import Antd from 'ant-design'
+ React.use(Antd)
+ if you want to use antd in whole project.
+ */
 
 ReactDOM.render(
    <React.StrictMode>
      <App />
     <Show />
+    <TestTwo/>
    </React.StrictMode>,
   document.getElementById('root')
 );

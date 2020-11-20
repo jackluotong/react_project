@@ -1,0 +1,12 @@
+.divOne{
+   display: inline-table;
+  }
+  .divTwo{
+      margin: 0 auto;
+  }
+.btnOne{
+      width: 200px;
+}
+.btnTwo{
+    margin-top: 100px;
+}

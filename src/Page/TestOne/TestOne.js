@@ -1,15 +1,20 @@
 import { Button } from 'antd';
+ import './index.css'
 
-function GetGreeting(props) { 
+/*
+example one
+use function construct component
+*/
+function TestOne(props) { 
     return <h1>Hello, {props.name}.</h1>; 
 
 }
 function DateTime(props){
-  return <Button type="primary">Primary</Button>;
+  return <Button type="primary" >Primary</Button>;
  }
  function Click(){
    return <Button 
-   className='but1'
+   className='btnOne'
    onClick={activateLasers}>
    Activate Lasers
  </Button>
@@ -21,16 +26,13 @@ function DateTime(props){
  }
 function Show(){
   return(
-    <div>
-    <Click/>
-    <DateTime />
-    <GetGreeting name="williamluo"/>
-    <GetGreeting name="jackluo"/>
-    <GetGreeting name="jerryluo"/>
-    <textarea>
-    你好， 这是在 text area 里的文本
-    </textarea>
-     </div>
+    <div className='divOne'>
+      <Click/>
+      <DateTime />
+      <TestOne name="williamluo"/>
+      <TestOne name="jackluo"/>
+      <TestOne name="jerryluo"/>
+    </div>
   )
 }
 export default Show;
