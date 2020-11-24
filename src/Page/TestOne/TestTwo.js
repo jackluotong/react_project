@@ -26,7 +26,7 @@ import './index.css'
         }, 1000);
         this.timerId=setInterval(
             () => this.tick(),
-            1000
+            1000 
         );
     }
     componentDidUpdate(){
@@ -37,15 +37,16 @@ import './index.css'
         clearTimeout(this.timer)
         clearInterval(this.timerId)
     }
+   
+    /**
+     * define function
+     * 
+     */
     tick(){
         this.setState({
             date:new Date()
         });
     }
-    /**
-     * define function
-     * 
-     */
     /**
      * render and do some layout
      */
