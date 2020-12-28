@@ -12,11 +12,11 @@ import TestTwo from './Page/TestOne/TestTwo'
  */
 
 ReactDOM.render(
-   <React.StrictMode>
-     <App />
+  <React.StrictMode>
+    <App />
     <Show />
-    <TestTwo/>
-   </React.StrictMode>,
+    <TestTwo />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
