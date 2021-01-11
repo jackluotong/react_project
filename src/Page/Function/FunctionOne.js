@@ -4,6 +4,5 @@
  */
 
 function FunctionOne(props) {
-  return <h2>{props.name} </h2>;
+  return
 }
-export default FunctionOne;
