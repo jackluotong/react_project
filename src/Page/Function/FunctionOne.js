@@ -3,6 +3,7 @@
  *
  */
 
- function FunctionOne(props){
-   return
- }
+function FunctionOne(props) {
+  return <h2>{props.name} </h2>;
+}
+export default FunctionOne;
