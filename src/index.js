@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Show from './Page/TestOne/TestOne'
 import TestTwo from './Page/TestOne/TestTwo'
+import Eample from './Hooks/Index'
 /* 
  import Antd from 'ant-design'
  React.use(Antd)
@@ -16,6 +17,7 @@ ReactDOM.render(
     <App />
     <Show />
     <TestTwo />
+    <Eample />
   </React.StrictMode>,
   document.getElementById('root')
 );
