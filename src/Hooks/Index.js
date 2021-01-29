@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 /**
  * use hooks
  * 
@@ -18,16 +19,31 @@ function EampleTwo() {
     </div>
   )
 }
+function Index() {
+  return <h2>hhh</h2>
+}
+function IndextWO() {
+  return <h2>hhhtwo</h2>
+}
 function Eample() {
   const [count, setCount] = useState(0)
   useEffect(() => {
-    console.log('useEffect=>you clicked me ${count} times');
+    // console.log('useEffect=>you clicked me ${count} times');
   })
   return (
     <div>
       <EampleTwo />
       <p>You clicked {count} times</p>
       <button onClick={() => { setCount(count + 1) }}>Click me</button>{/* 当状态需要改变时用setCount之类的*/}
+      <Router>
+        <ul>
+          <li><Link to='/'>s</Link></li>
+          <li><Link to='/list/'>s</Link></li>
+        </ul>
+        <Route path='/' exact component={Index} />
+        <Route path='/list/' component={IndextWO} />
+      </Router>
+
     </div>
   )
 }
