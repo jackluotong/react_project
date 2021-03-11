@@ -38,7 +38,7 @@ function Eample() {
       <Router>
         <ul>
           <li><Link to='/'>s</Link></li>
-          <li><Link to='/list/'>s</Link></li>
+          <li><Link to='/list/'>s1</Link></li>
         </ul>
         <Route path='/' exact component={Index} />
         <Route path='/list/' component={IndextWO} />
